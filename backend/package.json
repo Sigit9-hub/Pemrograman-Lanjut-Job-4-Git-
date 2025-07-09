@@ -1,0 +1,17 @@
+{
+  "name": "pertemuan_3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Proyek ini adalah **simulasi dashboard monitoring IoT** sederhana. Data seperti **temperature**, **humidity**, dan **pressure** disediakan oleh API server berbasis **Node.js**, kemudian ditampilkan ke antarmuka web menggunakan **HTML + TailwindCSS + JavaScript (fetch API)**.",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {}
+}

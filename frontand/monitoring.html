@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monitoring Panel</title>
+  <link href="output.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <div class="max-w-3xl mx-auto p-6">
+    <!-- Judul -->
+    <h1 class="text-3xl font-bold mb-6">Panel Monitoring</h1>
+
+    <!-- Sensor Section -->
+    <div class="bg-gray-200 p-4 rounded mb-6">
+      <h2 class="text-xl font-semibold mb-2">Sensor</h2>
+      <p>Temperature: <span id="temperature">...</span></p>
+      <p>Humidity: <span id="humidity">...</span></p>
+      <p>Pressure: <span id="pressure">...</span></p>
+      <p>wind: <span id="wind">...</span></p>
+      <p>light: <span id="light">...</span></p>
+    </div>
+
+    <!-- Kontrol Aktuator -->
+    <div class="bg-gray-200 p-4 rounded mb-6">
+      <h2 class="text-xl font-semibold mb-4">Kontrol Aktuator</h2>
+      <button onclick="toggleActuator('A')" class="w-full bg-green-500 text-white py-2 rounded mb-2 hover:bg-green-600">Aktuator A</button>
+      <button onclick="toggleActuator('B')" class="w-full bg-green-500 text-white py-2 rounded mb-2 hover:bg-green-600">Aktuator B</button>
+      <button onclick="toggleActuator('C')" class="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600">Aktuator C</button>
+    </div>
+
+    <!-- Log -->
+    <div class="bg-gray-100 p-4 rounded border">
+      <h2 class="text-xl font-semibold mb-2">Aktivitas / Log</h2>
+      <ul id="log-list" class="list-disc list-inside text-sm text-gray-700"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
